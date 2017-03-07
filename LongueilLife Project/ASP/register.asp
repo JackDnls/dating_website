@@ -21,7 +21,7 @@
     myConn = new ActiveXObject("ADODB.Connection");
     myRec = new ActiveXObject("ADODB.RecordSet");
 
-    myConn.Open('Provider=Microsoft.Jet.OLEDB.4.0;Data Source = E:\\+++College Lassale+++\\INTERNET\\LongueilLife Project\\App-Data\\Longueilife.mdb');
+    myConn.Open('Provider=Microsoft.Jet.OLEDB.4.0;Data Source = E:\\Longueilife.mdb');
 
     var sqlReadEmail = "SELECT EmailAddr FROM Users WHERE EmailAddr = '" + emailAddr+"'";
     myRec.Open(sqlReadEmail, myConn);
