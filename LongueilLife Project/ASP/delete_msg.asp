@@ -3,7 +3,7 @@
     var refMsg = parseInt(Request.QueryString("MessID"));
 
     var myConn = new ActiveXObject("ADODB.CONNECTION");
-    var path = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\+++College Lassale+++\\INTERNET\\LongueilLife Project\\App-Data\\Longueilife.mdb";
+    var path = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\Longueilife.mdb";
     myConn.Open(path);
 
     var myRec = new ActiveXObject("ADODB.RecordSet");
