@@ -5,7 +5,7 @@
 	var curGender = Session('curGender');
 
 	var myConn = new ActiveXObject("ADODB.Connection");	
-	myConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\+++College Lassale+++\\INTERNET\\LongueilLife Project\\App-Data\\Longueilife.mdb");
+	myConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\Longueilife.mdb");
 
 	var myRec = new ActiveXObject("ADODB.Recordset");
 	var sqlSt = "SELECT Nickname, City, Province, Gender, Preferences, Birthday, MaritalStatus, Body, Children, Education, Etnicity, Height";
