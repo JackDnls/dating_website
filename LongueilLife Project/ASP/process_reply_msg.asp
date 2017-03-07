@@ -8,7 +8,7 @@
 
     var myConn = new ActiveXObject("ADODB.Connection");
     var myRec = new ActiveXObject("ADODB.RecordSet");
-    myConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\+++College Lassale+++\\INTERNET\\LongueilLife Project\\App-Data\\Longueilife.mdb");
+    myConn.Open("Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\Longueilife.mdb");
 
     var sql = "INSERT INTO Messages (MessageBody, Sender, Receiver) VALUES ('" + messBody + "', " + sender + ", " + receiver + ");";
     myRec.Open(sql, myConn);
