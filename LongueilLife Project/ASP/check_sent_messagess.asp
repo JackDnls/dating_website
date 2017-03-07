@@ -5,7 +5,7 @@
 
     var myConn = new ActiveXObject("ADODB.Connection");
     var myRec = new ActiveXObject("ADODB.RecordSet");
-    var path = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\+++College Lassale+++\\INTERNET\\LongueilLife Project\\App-Data\\Longueilife.mdb";
+    var path = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= E:\\Longueilife.mdb";
     myConn.Open(path);
     var sqlStat = "SELECT Messages.MessageID, Messages.MessageBody, Messages.DateSent, Profiles.ProfileID, Profiles.Nickname, Profiles.City, Profiles.Province, Profiles.Gender FROM (Profiles INNER JOIN Messages ON Profiles.ProfileID = Messages.Receiver) WHERE (Messages.Sender = "+refSender+")";
     myRec.Open(sqlStat, myConn);
